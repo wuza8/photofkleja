@@ -1,0 +1,193 @@
+@font-face {
+    font-family: cherrybomb;
+    src: url(CherryBombOne-Regular.ttf);
+ }
+ @font-face {
+    font-family: dosis;
+    src: url(Dosis-VariableFont_wght.ttf);
+ }
+ 
+
+ @keyframes login-text-anim {
+    0% {color: #111;}
+    50% {color: #c88;}
+    100% {color: #111;}
+}
+
+@keyframes login-hover-anim {
+    0% {
+        font-size: 15px;
+        margin-right: 20px;
+        margin-top: 13px;
+    }
+    100% {
+        font-size: 17px;
+        margin-top: 11px;
+        margin-right: 15px;
+    }
+}
+
+.image{
+    padding: 5px;
+    width: calc(25% - 10px);
+    height: 190px;
+    float: left;
+}
+
+.image:hover{
+    width: 25%;
+    height: 200px;
+    padding: 0px;
+    float: left;
+    cursor: pointer;
+    animation: image-anim-hover;
+    animation-timing-function: linear;
+    animation-duration: 0.2s;
+}
+
+#logo{
+    font-family: 'cherrybomb';
+    font-size: 24px;
+    margin-top: 6px;
+    margin-left: 15px;
+    display: block;
+    float: left;
+}
+
+
+
+#logo-login{
+    font-family: 'cherrybomb';
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    float: left;
+}
+
+#login{
+    float: right;
+    font-size: 14px;
+    margin-right: 20px;
+    margin-top: 15px;
+    color: #444;
+    font-family: 'cherrybomb';
+    animation-name: login-text-anim;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+#login:hover{
+    font-size: 17px;
+    color: #111;
+    animation: login-hover-anim;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    cursor: pointer;
+    margin-top: 11px;
+    margin-right: 15px;
+    /* text-shadow: 0px 0px 5px; */
+}
+
+
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'dosis';
+}
+
+#footer{
+    float: left;
+    width: 100%;
+    box-shadow: 0px 0px 5px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+#footer-show{
+    float: left;
+    width: 100%;
+    box-shadow: 0px 0px 5px;
+    height: 50px;
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+}
+
+#images{
+    width: calc(100% - 100px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#new{
+    font-family: 'cherrybomb';
+    font-size: 14px;
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+#new:hover{
+    color: #559;
+    cursor: pointer;
+}
+
+.image-show{
+    width: 100%;
+}
+
+#show-content{
+    width: calc(100% - 400px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#show-info{
+    width: 400px;
+    background-color: #111;
+    float: right;
+    height: 300px;
+}
+
+
+#login-content{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 20px #aaa;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+input{
+    font-size: 16px;
+    font-family: 'cherrybomb';
+    padding: 10px;
+    margin: 10px;
+    display: block;
+}
+
+#login-form > input{
+    width: 255px;
+    padding: 10px;
+}
+
+.login-button{
+    width: 126px !important;
+    float: left;
+}
+
+.floatleft{
+    float: left;
+}
+
+#buttonTable > tr{
+    width: 255px;
+}
+
+#login-error{
+    text-align: center !important;
+    color: red;
+    width: 300px;
+}
